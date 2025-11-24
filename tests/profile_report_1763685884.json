@@ -1,0 +1,1839 @@
+{
+  "hardware": {
+    "cpu_vendor": "GenuineIntel",
+    "cpu_brand": "Apple M1",
+    "cpu_model": "Apple M1",
+    "cpu_arch": "x86_64",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 8,
+    "cpu_frequency_base": 2.5,
+    "cpu_frequency_max": 2.4,
+    "cpu_simd": [
+      "acpi",
+      "aes",
+      "apic",
+      "clflush",
+      "clfsh",
+      "cmov",
+      "cx16",
+      "cx8",
+      "de",
+      "ds",
+      "dscpl",
+      "dtes64",
+      "dtse64",
+      "est",
+      "fpu",
+      "fxsr",
+      "htt",
+      "lahf_lm",
+      "mca",
+      "mce",
+      "mmx",
+      "mon",
+      "monitor",
+      "msr",
+      "mtrr",
+      "pae",
+      "pat",
+      "pbe",
+      "pclmulqdq",
+      "pdcm",
+      "pge",
+      "pni",
+      "popcnt",
+      "pse",
+      "pse36",
+      "seglim64",
+      "sep",
+      "ss",
+      "sse",
+      "sse2",
+      "sse3",
+      "sse4.1",
+      "sse4.2",
+      "sse4_1",
+      "sse4_2",
+      "ssse3",
+      "tm",
+      "tm2",
+      "tpr",
+      "tsc",
+      "vme",
+      "vmx"
+    ],
+    "cache_l1_data": 65536,
+    "cache_l1_instruction": 131072,
+    "cache_l2": 4194304,
+    "cache_l3": 0,
+    "ram_total": 8589934592,
+    "memory_type": "LPDDR4",
+    "memory_speed": 0,
+    "memory_channels": 0,
+    "gpu_info": [],
+    "os_info": "macOS",
+    "os_version": "15.3.1",
+    "os_kernel": "24.3.0",
+    "os_architecture": "x86_64",
+    "theoretical_cpu_gflops": 76.8,
+    "theoretical_gpu_gflops": 0.0
+  },
+  "static_analysis": {
+    "complexity": {},
+    "halstead": {},
+    "big_o": {},
+    "call_graph": {}
+  },
+  "dynamic_analysis": {
+    "time": {
+      "wall_time": 0.574376166,
+      "cpu_time": 0.448153
+    },
+    "memory": {
+      "current_memory": 8418798,
+      "peak_memory": 8516186
+    },
+    "io": {
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "read_count": 0,
+      "write_count": 0
+    },
+    "gc": {
+      "collections": {
+        "gen0": 156,
+        "gen1": 10,
+        "gen2": 0
+      },
+      "objects_per_gen": {
+        "gen0": 233,
+        "gen1": 1,
+        "gen2": 2
+      },
+      "total_objects": 60417,
+      "thresholds": {
+        "gen0": 700,
+        "gen1": 10,
+        "gen2": 10
+      },
+      "is_enabled": true
+    },
+    "cpu": {
+      "user_time": 0.009727053000000001,
+      "system_time": 0.0005980900000000008,
+      "cpu_percent": 0.0,
+      "context_switches": {
+        "voluntary": 212,
+        "involuntary": 1596
+      }
+    },
+    "allocations": {
+      "top_allocators": [
+        {
+          "file": "<frozen importlib._bootstrap_external>:647",
+          "size_bytes": 2686150,
+          "size_kb": 2623.19,
+          "count": 41347
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+          "size_bytes": 2513238,
+          "size_kb": 2454.33,
+          "count": 19656
+        },
+        {
+          "file": "<frozen importlib._bootstrap>:228",
+          "size_bytes": 50613,
+          "size_kb": 49.43,
+          "count": 490
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/email/feedparser.py:45",
+          "size_bytes": 39172,
+          "size_kb": 38.25,
+          "count": 11
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py:780",
+          "size_bytes": 38168,
+          "size_kb": 37.27,
+          "count": 61
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/idna/idnadata.py:94",
+          "size_bytes": 37536,
+          "size_kb": 36.66,
+          "count": 3
+        },
+        {
+          "file": "<frozen importlib._bootstrap_external>:123",
+          "size_bytes": 36344,
+          "size_kb": 35.49,
+          "count": 266
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/abc.py:106",
+          "size_bytes": 36029,
+          "size_kb": 35.18,
+          "count": 114
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/json/decoder.py:353",
+          "size_bytes": 28536,
+          "size_kb": 27.87,
+          "count": 399
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:308",
+          "size_bytes": 28519,
+          "size_kb": 27.85,
+          "count": 361
+        }
+      ],
+      "total_size_bytes": 8423291,
+      "total_size_mb": 8.03,
+      "total_allocations": 76729
+    },
+    "hotspots": [
+      "1    0.000    0.000    0.557    0.557 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+      "1    0.000    0.000    0.556    0.556 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+      "1    0.000    0.000    0.556    0.556 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+      "1    0.000    0.000    0.556    0.556 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+      "1    0.556    0.556    0.556    0.556 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+      "1    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead}",
+      "14    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}"
+    ],
+    "call_tree": {
+      "start_time": 1763685882.942695,
+      "duration": 0.556686,
+      "sample_count": 361,
+      "target_description": "Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60",
+      "cpu_time": 0.430508,
+      "root_frame": {
+        "function": "profile_function",
+        "file_path_short": "code/profiler/dynamic/profiler.py",
+        "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py",
+        "line_no": 32,
+        "time": 0.555398,
+        "await_time": 0.0,
+        "is_application_code": true,
+        "children": [
+          {
+            "function": "run_script_with_mock_input",
+            "file_path_short": "code/profiler/orchestrator.py",
+            "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py",
+            "line_no": 103,
+            "time": 0.503273,
+            "await_time": 0.0,
+            "is_application_code": true,
+            "children": [
+              {
+                "function": "<module>",
+                "file_path_short": "<string>",
+                "file_path": "<string>",
+                "line_no": 1,
+                "time": 0.501987,
+                "await_time": 0.0,
+                "is_application_code": true,
+                "children": [
+                  {
+                    "function": "<module>",
+                    "file_path_short": "requests/__init__.py",
+                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/__init__.py",
+                    "line_no": 6,
+                    "time": 0.402571,
+                    "await_time": 0.0,
+                    "is_application_code": false,
+                    "children": [
+                      {
+                        "function": "<module>",
+                        "file_path_short": "urllib3/__init__.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/__init__.py",
+                        "line_no": 1,
+                        "time": 0.225713,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "urllib3/_base_connection.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/_base_connection.py",
+                            "line_no": 1,
+                            "time": 0.120367,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "urllib3/util/__init__.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/__init__.py",
+                                "line_no": 2,
+                                "time": 0.117331,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "urllib3/util/ssl_.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py",
+                                    "line_no": 1,
+                                    "time": 0.085579,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "<module>",
+                                        "file_path_short": "urllib3/util/url.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/url.py",
+                                        "line_no": 1,
+                                        "time": 0.081295,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "compile",
+                                            "file_path_short": "re.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                            "line_no": 250,
+                                            "time": 0.08012,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "_compile",
+                                                "file_path_short": "re.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                                "line_no": 289,
+                                                "time": 0.08012,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [
+                                                  {
+                                                    "function": "compile",
+                                                    "file_path_short": "sre_compile.py",
+                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                    "line_no": 759,
+                                                    "time": 0.08012,
+                                                    "await_time": 0.0,
+                                                    "is_application_code": false,
+                                                    "children": [
+                                                      {
+                                                        "function": "parse",
+                                                        "file_path_short": "sre_parse.py",
+                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                        "line_no": 937,
+                                                        "time": 0.046037,
+                                                        "await_time": 0.0,
+                                                        "is_application_code": false,
+                                                        "children": [
+                                                          {
+                                                            "function": "_parse_sub",
+                                                            "file_path_short": "sre_parse.py",
+                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                            "line_no": 435,
+                                                            "time": 0.045036,
+                                                            "await_time": 0.0,
+                                                            "is_application_code": false,
+                                                            "children": [
+                                                              {
+                                                                "function": "_parse",
+                                                                "file_path_short": "sre_parse.py",
+                                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                "line_no": 493,
+                                                                "time": 0.045036,
+                                                                "await_time": 0.0,
+                                                                "is_application_code": false,
+                                                                "children": [
+                                                                  {
+                                                                    "function": "_parse_sub",
+                                                                    "file_path_short": "sre_parse.py",
+                                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                    "line_no": 435,
+                                                                    "time": 0.041031,
+                                                                    "await_time": 0.0,
+                                                                    "is_application_code": false,
+                                                                    "children": [
+                                                                      {
+                                                                        "function": "_parse",
+                                                                        "file_path_short": "sre_parse.py",
+                                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                        "line_no": 493,
+                                                                        "time": 0.040029,
+                                                                        "await_time": 0.0,
+                                                                        "is_application_code": false,
+                                                                        "children": [
+                                                                          {
+                                                                            "function": "_parse_sub",
+                                                                            "file_path_short": "sre_parse.py",
+                                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                            "line_no": 435,
+                                                                            "time": 0.035026,
+                                                                            "await_time": 0.0,
+                                                                            "is_application_code": false,
+                                                                            "children": [
+                                                                              {
+                                                                                "function": "_parse",
+                                                                                "file_path_short": "sre_parse.py",
+                                                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                                "line_no": 493,
+                                                                                "time": 0.034026,
+                                                                                "await_time": 0.0,
+                                                                                "is_application_code": false,
+                                                                                "children": [
+                                                                                  {
+                                                                                    "function": "_parse_sub",
+                                                                                    "file_path_short": "sre_parse.py",
+                                                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                                    "line_no": 435,
+                                                                                    "time": 0.01601,
+                                                                                    "await_time": 0.0,
+                                                                                    "is_application_code": false,
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "function": "_parse",
+                                                                                        "file_path_short": "sre_parse.py",
+                                                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                                                        "line_no": 493,
+                                                                                        "time": 0.015011,
+                                                                                        "await_time": 0.0,
+                                                                                        "is_application_code": false,
+                                                                                        "children": [],
+                                                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                                      }
+                                                                                    ],
+                                                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                                  },
+                                                                                  {
+                                                                                    "function": "[self]",
+                                                                                    "file_path_short": "sre_parse.py",
+                                                                                    "file_path": "",
+                                                                                    "line_no": 0,
+                                                                                    "time": 0.006001,
+                                                                                    "await_time": 0.0,
+                                                                                    "is_application_code": false,
+                                                                                    "children": [],
+                                                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                                  }
+                                                                                ],
+                                                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                              }
+                                                                            ],
+                                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                          }
+                                                                        ],
+                                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                      }
+                                                                    ],
+                                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                  }
+                                                                ],
+                                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                              }
+                                                            ],
+                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                          }
+                                                        ],
+                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                      },
+                                                      {
+                                                        "function": "_code",
+                                                        "file_path_short": "sre_compile.py",
+                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                        "line_no": 598,
+                                                        "time": 0.034083,
+                                                        "await_time": 0.0,
+                                                        "is_application_code": false,
+                                                        "children": [
+                                                          {
+                                                            "function": "_compile",
+                                                            "file_path_short": "sre_compile.py",
+                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                            "line_no": 71,
+                                                            "time": 0.030081,
+                                                            "await_time": 0.0,
+                                                            "is_application_code": false,
+                                                            "children": [
+                                                              {
+                                                                "function": "_compile",
+                                                                "file_path_short": "sre_compile.py",
+                                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                                "line_no": 71,
+                                                                "time": 0.030081,
+                                                                "await_time": 0.0,
+                                                                "is_application_code": false,
+                                                                "children": [
+                                                                  {
+                                                                    "function": "_compile",
+                                                                    "file_path_short": "sre_compile.py",
+                                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                                    "line_no": 71,
+                                                                    "time": 0.028079,
+                                                                    "await_time": 0.0,
+                                                                    "is_application_code": false,
+                                                                    "children": [
+                                                                      {
+                                                                        "function": "_compile",
+                                                                        "file_path_short": "sre_compile.py",
+                                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                                        "line_no": 71,
+                                                                        "time": 0.025075,
+                                                                        "await_time": 0.0,
+                                                                        "is_application_code": false,
+                                                                        "children": [
+                                                                          {
+                                                                            "function": "_compile",
+                                                                            "file_path_short": "sre_compile.py",
+                                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                                            "line_no": 71,
+                                                                            "time": 0.011034,
+                                                                            "await_time": 0.0,
+                                                                            "is_application_code": false,
+                                                                            "children": [],
+                                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                          },
+                                                                          {
+                                                                            "function": "_optimize_charset",
+                                                                            "file_path_short": "sre_compile.py",
+                                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                                                            "line_no": 276,
+                                                                            "time": 0.008039,
+                                                                            "await_time": 0.0,
+                                                                            "is_application_code": false,
+                                                                            "children": [],
+                                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                          }
+                                                                        ],
+                                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                      }
+                                                                    ],
+                                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                                  }
+                                                                ],
+                                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                              }
+                                                            ],
+                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                          }
+                                                        ],
+                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                      }
+                                                    ],
+                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                  }
+                                                ],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              }
+                                            ],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  },
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "urllib3/util/request.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/request.py",
+                                    "line_no": 1,
+                                    "time": 0.020484,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "<module>",
+                                        "file_path_short": "brotli/__init__.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/brotli/__init__.py",
+                                        "line_no": 3,
+                                        "time": 0.012388,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "<module>",
+                                            "file_path_short": "brotli/brotli.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/brotli/brotli.py",
+                                            "line_no": 2,
+                                            "time": 0.01024,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "create_dynamic",
+                                                "file_path_short": "<built-in>",
+                                                "file_path": "<built-in>",
+                                                "line_no": 0,
+                                                "time": 0.005753,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              }
+                                            ],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          },
+                          {
+                            "function": "<module>",
+                            "file_path_short": "urllib3/connectionpool.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py",
+                            "line_no": 1,
+                            "time": 0.055443,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "urllib3/_request_methods.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/_request_methods.py",
+                                "line_no": 1,
+                                "time": 0.052361,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "urllib3/response.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/response.py",
+                                    "line_no": 1,
+                                    "time": 0.047268,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "<module>",
+                                        "file_path_short": "urllib3/connection.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py",
+                                        "line_no": 1,
+                                        "time": 0.041968,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "<module>",
+                                            "file_path_short": "urllib3/http2/__init__.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/http2/__init__.py",
+                                            "line_no": 1,
+                                            "time": 0.024197,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "<module>",
+                                                "file_path_short": "importlib/metadata.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/importlib/metadata.py",
+                                                "line_no": 1,
+                                                "time": 0.017451,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              }
+                                            ],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          },
+                                          {
+                                            "function": "[self]",
+                                            "file_path_short": "urllib3/connection.py",
+                                            "file_path": "",
+                                            "line_no": 0,
+                                            "time": 0.012324,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          },
+                          {
+                            "function": "<module>",
+                            "file_path_short": "urllib3/exceptions.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/exceptions.py",
+                            "line_no": 1,
+                            "time": 0.035344,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "http/client.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py",
+                                "line_no": 1,
+                                "time": 0.03054,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "email/parser.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/email/parser.py",
+                                    "line_no": 5,
+                                    "time": 0.01941,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "<module>",
+                                        "file_path_short": "email/feedparser.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/email/feedparser.py",
+                                        "line_no": 5,
+                                        "time": 0.018015,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "<module>",
+                                            "file_path_short": "email/_policybase.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/email/_policybase.py",
+                                            "line_no": 1,
+                                            "time": 0.00979,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      },
+                      {
+                        "function": "<module>",
+                        "file_path_short": "requests/exceptions.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/exceptions.py",
+                        "line_no": 1,
+                        "time": 0.100993,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "requests/compat.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/compat.py",
+                            "line_no": 1,
+                            "time": 0.100993,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "_resolve_char_detection",
+                                "file_path_short": "requests/compat.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/compat.py",
+                                "line_no": 30,
+                                "time": 0.063814,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "import_module",
+                                    "file_path_short": "importlib/__init__.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/importlib/__init__.py",
+                                    "line_no": 109,
+                                    "time": 0.063814,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "<module>",
+                                        "file_path_short": "chardet/__init__.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/__init__.py",
+                                        "line_no": 19,
+                                        "time": 0.061813,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "<module>",
+                                            "file_path_short": "chardet/universaldetector.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/universaldetector.py",
+                                            "line_no": 28,
+                                            "time": 0.058766,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "<module>",
+                                                "file_path_short": "chardet/mbcsgroupprober.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/mbcsgroupprober.py",
+                                                "line_no": 30,
+                                                "time": 0.035361,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [
+                                                  {
+                                                    "function": "<module>",
+                                                    "file_path_short": "chardet/sjisprober.py",
+                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/sjisprober.py",
+                                                    "line_no": 28,
+                                                    "time": 0.026161,
+                                                    "await_time": 0.0,
+                                                    "is_application_code": false,
+                                                    "children": [
+                                                      {
+                                                        "function": "<module>",
+                                                        "file_path_short": "chardet/chardistribution.py",
+                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/chardistribution.py",
+                                                        "line_no": 28,
+                                                        "time": 0.022084,
+                                                        "await_time": 0.0,
+                                                        "is_application_code": false,
+                                                        "children": [
+                                                          {
+                                                            "function": "loads",
+                                                            "file_path_short": "<built-in>",
+                                                            "file_path": "<built-in>",
+                                                            "line_no": 0,
+                                                            "time": 0.017766,
+                                                            "await_time": 0.0,
+                                                            "is_application_code": false,
+                                                            "children": [],
+                                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                          }
+                                                        ],
+                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                      }
+                                                    ],
+                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                  }
+                                                ],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              },
+                                              {
+                                                "function": "<module>",
+                                                "file_path_short": "chardet/sbcsgroupprober.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/sbcsgroupprober.py",
+                                                "line_no": 29,
+                                                "time": 0.014056,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              }
+                                            ],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              },
+                              {
+                                "function": "<module>",
+                                "file_path_short": "http/cookiejar.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/cookiejar.py",
+                                "line_no": 1,
+                                "time": 0.025071,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "compile",
+                                    "file_path_short": "re.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                    "line_no": 250,
+                                    "time": 0.013011,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "_compile",
+                                        "file_path_short": "re.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                        "line_no": 289,
+                                        "time": 0.013011,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "compile",
+                                            "file_path_short": "sre_compile.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                            "line_no": 759,
+                                            "time": 0.013011,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "parse",
+                                                "file_path_short": "sre_parse.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                "line_no": 937,
+                                                "time": 0.007006,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [
+                                                  {
+                                                    "function": "_parse_sub",
+                                                    "file_path_short": "sre_parse.py",
+                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                    "line_no": 435,
+                                                    "time": 0.007006,
+                                                    "await_time": 0.0,
+                                                    "is_application_code": false,
+                                                    "children": [
+                                                      {
+                                                        "function": "_parse",
+                                                        "file_path_short": "sre_parse.py",
+                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py",
+                                                        "line_no": 493,
+                                                        "time": 0.006006,
+                                                        "await_time": 0.0,
+                                                        "is_application_code": false,
+                                                        "children": [],
+                                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                      }
+                                                    ],
+                                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                                  }
+                                                ],
+                                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                              }
+                                            ],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  },
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "urllib/request.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py",
+                                    "line_no": 1,
+                                    "time": 0.007251,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              },
+                              {
+                                "function": "<module>",
+                                "file_path_short": "http/cookies.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/cookies.py",
+                                "line_no": 39,
+                                "time": 0.007003,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "compile",
+                                    "file_path_short": "re.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                    "line_no": 250,
+                                    "time": 0.007003,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "_compile",
+                                        "file_path_short": "re.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py",
+                                        "line_no": 289,
+                                        "time": 0.007003,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "compile",
+                                            "file_path_short": "sre_compile.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py",
+                                            "line_no": 759,
+                                            "time": 0.007003,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [],
+                                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                          }
+                                        ],
+                                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                      }
+                                    ],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      },
+                      {
+                        "function": "<module>",
+                        "file_path_short": "charset_normalizer/__init__.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/__init__.py",
+                        "line_no": 1,
+                        "time": 0.020925,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "charset_normalizer/api.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/api.py",
+                            "line_no": 1,
+                            "time": 0.017006,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "charset_normalizer/md.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/md.py",
+                                "line_no": 1,
+                                "time": 0.005654,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      },
+                      {
+                        "function": "<module>",
+                        "file_path_short": "requests/api.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py",
+                        "line_no": 1,
+                        "time": 0.018565,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "requests/sessions.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py",
+                            "line_no": 1,
+                            "time": 0.017446,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "requests/adapters.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py",
+                                "line_no": 1,
+                                "time": 0.016332,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "<module>",
+                                    "file_path_short": "requests/models.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/models.py",
+                                    "line_no": 1,
+                                    "time": 0.00791,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [],
+                                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                                  }
+                                ],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      },
+                      {
+                        "function": "<module>",
+                        "file_path_short": "requests/packages.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/packages.py",
+                        "line_no": 1,
+                        "time": 0.015351,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "idna/__init__.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/idna/__init__.py",
+                            "line_no": 1,
+                            "time": 0.00932,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "<module>",
+                                "file_path_short": "idna/core.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/idna/core.py",
+                                "line_no": 1,
+                                "time": 0.007122,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [],
+                                "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                              }
+                            ],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      },
+                      {
+                        "function": "<module>",
+                        "file_path_short": "requests/utils.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/utils.py",
+                        "line_no": 1,
+                        "time": 0.011377,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "<module>",
+                            "file_path_short": "requests/certs.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/certs.py",
+                            "line_no": 3,
+                            "time": 0.006061,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [],
+                            "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                          }
+                        ],
+                        "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                      }
+                    ],
+                    "group_id": "7896e92a-58b4-485a-b2d9-d5db38fb0f40"
+                  },
+                  {
+                    "function": "post",
+                    "file_path_short": "requests/api.py",
+                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py",
+                    "line_no": 103,
+                    "time": 0.097199,
+                    "await_time": 0.0,
+                    "is_application_code": false,
+                    "children": [
+                      {
+                        "function": "request",
+                        "file_path_short": "requests/api.py",
+                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py",
+                        "line_no": 14,
+                        "time": 0.097199,
+                        "await_time": 0.0,
+                        "is_application_code": false,
+                        "children": [
+                          {
+                            "function": "request",
+                            "file_path_short": "requests/sessions.py",
+                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py",
+                            "line_no": 500,
+                            "time": 0.0962,
+                            "await_time": 0.0,
+                            "is_application_code": false,
+                            "children": [
+                              {
+                                "function": "send",
+                                "file_path_short": "requests/sessions.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py",
+                                "line_no": 673,
+                                "time": 0.076674,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "send",
+                                    "file_path_short": "requests/adapters.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py",
+                                    "line_no": 590,
+                                    "time": 0.075671,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "urlopen",
+                                        "file_path_short": "urllib3/connectionpool.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py",
+                                        "line_no": 592,
+                                        "time": 0.075671,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "_make_request",
+                                            "file_path_short": "urllib3/connectionpool.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py",
+                                            "line_no": 377,
+                                            "time": 0.074671,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "getresponse",
+                                                "file_path_short": "urllib3/connection.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py",
+                                                "line_no": 534,
+                                                "time": 0.072581,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [
+                                                  {
+                                                    "function": "getresponse",
+                                                    "file_path_short": "http/client.py",
+                                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py",
+                                                    "line_no": 1327,
+                                                    "time": 0.071634,
+                                                    "await_time": 0.0,
+                                                    "is_application_code": false,
+                                                    "children": [
+                                                      {
+                                                        "function": "begin",
+                                                        "file_path_short": "http/client.py",
+                                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py",
+                                                        "line_no": 312,
+                                                        "time": 0.071634,
+                                                        "await_time": 0.0,
+                                                        "is_application_code": false,
+                                                        "children": [
+                                                          {
+                                                            "function": "_read_status",
+                                                            "file_path_short": "http/client.py",
+                                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py",
+                                                            "line_no": 279,
+                                                            "time": 0.071634,
+                                                            "await_time": 0.0,
+                                                            "is_application_code": false,
+                                                            "children": [
+                                                              {
+                                                                "function": "readinto",
+                                                                "file_path_short": "socket.py",
+                                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/socket.py",
+                                                                "line_no": 690,
+                                                                "time": 0.071634,
+                                                                "await_time": 0.0,
+                                                                "is_application_code": false,
+                                                                "children": [
+                                                                  {
+                                                                    "function": "socket.recv_into",
+                                                                    "file_path_short": "<built-in>",
+                                                                    "file_path": "<built-in>",
+                                                                    "line_no": 0,
+                                                                    "time": 0.071634,
+                                                                    "await_time": 0.0,
+                                                                    "is_application_code": false,
+                                                                    "children": [],
+                                                                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                                                  }
+                                                                ],
+                                                                "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                                                "class_name": "SocketIO"
+                                                              }
+                                                            ],
+                                                            "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                                            "class_name": "HTTPResponse"
+                                                          }
+                                                        ],
+                                                        "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                                        "class_name": "HTTPResponse"
+                                                      }
+                                                    ],
+                                                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                                    "class_name": "HTTPConnection"
+                                                  }
+                                                ],
+                                                "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                                "class_name": "HTTPConnection"
+                                              }
+                                            ],
+                                            "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                            "class_name": "HTTPConnectionPool"
+                                          }
+                                        ],
+                                        "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                        "class_name": "HTTPConnectionPool"
+                                      }
+                                    ],
+                                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                    "class_name": "HTTPAdapter"
+                                  }
+                                ],
+                                "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                "class_name": "Session"
+                              },
+                              {
+                                "function": "merge_environment_settings",
+                                "file_path_short": "requests/sessions.py",
+                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py",
+                                "line_no": 750,
+                                "time": 0.017526,
+                                "await_time": 0.0,
+                                "is_application_code": false,
+                                "children": [
+                                  {
+                                    "function": "get_environ_proxies",
+                                    "file_path_short": "requests/utils.py",
+                                    "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/utils.py",
+                                    "line_no": 816,
+                                    "time": 0.017526,
+                                    "await_time": 0.0,
+                                    "is_application_code": false,
+                                    "children": [
+                                      {
+                                        "function": "should_bypass_proxies",
+                                        "file_path_short": "requests/utils.py",
+                                        "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/utils.py",
+                                        "line_no": 755,
+                                        "time": 0.016527,
+                                        "await_time": 0.0,
+                                        "is_application_code": false,
+                                        "children": [
+                                          {
+                                            "function": "proxy_bypass",
+                                            "file_path_short": "urllib/request.py",
+                                            "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py",
+                                            "line_no": 2636,
+                                            "time": 0.016527,
+                                            "await_time": 0.0,
+                                            "is_application_code": false,
+                                            "children": [
+                                              {
+                                                "function": "proxy_bypass_macosx_sysconf",
+                                                "file_path_short": "urllib/request.py",
+                                                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py",
+                                                "line_no": 2622,
+                                                "time": 0.015525,
+                                                "await_time": 0.0,
+                                                "is_application_code": false,
+                                                "children": [
+                                                  {
+                                                    "function": "_get_proxy_settings",
+                                                    "file_path_short": "<built-in>",
+                                                    "file_path": "<built-in>",
+                                                    "line_no": 0,
+                                                    "time": 0.01187,
+                                                    "await_time": 0.0,
+                                                    "is_application_code": false,
+                                                    "children": [],
+                                                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                                  }
+                                                ],
+                                                "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                              }
+                                            ],
+                                            "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                          }
+                                        ],
+                                        "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                      }
+                                    ],
+                                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                                  }
+                                ],
+                                "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                                "class_name": "Session"
+                              }
+                            ],
+                            "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08",
+                            "class_name": "Session"
+                          }
+                        ],
+                        "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                      }
+                    ],
+                    "group_id": "93c8f51a-62e3-47da-877e-01d5ddf64c08"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "function": "__exit__",
+            "file_path_short": "code/profiler/metrics/allocation_collector.py",
+            "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/allocation_collector.py",
+            "line_no": 23,
+            "time": 0.052125,
+            "await_time": 0.0,
+            "is_application_code": true,
+            "children": [
+              {
+                "function": "take_snapshot",
+                "file_path_short": "tracemalloc.py",
+                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/tracemalloc.py",
+                "line_no": 551,
+                "time": 0.052125,
+                "await_time": 0.0,
+                "is_application_code": false,
+                "children": [
+                  {
+                    "function": "_get_traces",
+                    "file_path_short": "<built-in>",
+                    "file_path": "<built-in>",
+                    "line_no": 0,
+                    "time": 0.052125,
+                    "await_time": 0.0,
+                    "is_application_code": false,
+                    "children": [],
+                    "group_id": "823975c2-429c-4217-821a-d22b116503db"
+                  }
+                ],
+                "group_id": "823975c2-429c-4217-821a-d22b116503db"
+              }
+            ],
+            "class_name": "AllocationCollector"
+          }
+        ],
+        "class_name": "DynamicProfiler"
+      }
+    },
+    "return_value": {
+      "code": "\ndef constant_time():\n    return 42\n\ndef linear_time(n):\n    for i in range(n):\n        pass\n\ndef quadratic_time(n):\n    for i in range(n):\n        for j in range(n):\n            pass\n\ndef recursive_func(n):\n    if n <= 0: return\n    recursive_func(n-1)\n",
+      "url": "http://localhost:8000/profile/code",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "data": {
+        "code": "\ndef constant_time():\n    return 42\n\ndef linear_time(n):\n    for i in range(n):\n        pass\n\ndef quadratic_time(n):\n    for i in range(n):\n        for j in range(n):\n            pass\n\ndef recursive_func(n):\n    if n <= 0: return\n    recursive_func(n-1)\n"
+      },
+      "result": {
+        "hardware": {
+          "cpu_vendor": "GenuineIntel",
+          "cpu_brand": "Apple M1",
+          "cpu_model": "Apple M1",
+          "cpu_arch": "x86_64",
+          "cpu_physical_cores": 8,
+          "cpu_logical_cores": 8,
+          "cpu_frequency_base": 2.5,
+          "cpu_frequency_max": 2.4,
+          "cpu_simd": [
+            "acpi",
+            "aes",
+            "apic",
+            "clflush",
+            "clfsh",
+            "cmov",
+            "cx16",
+            "cx8",
+            "de",
+            "ds",
+            "dscpl",
+            "dtes64",
+            "dtse64",
+            "est",
+            "fpu",
+            "fxsr",
+            "htt",
+            "lahf_lm",
+            "mca",
+            "mce",
+            "mmx",
+            "mon",
+            "monitor",
+            "msr",
+            "mtrr",
+            "pae",
+            "pat",
+            "pbe",
+            "pclmulqdq",
+            "pdcm",
+            "pge",
+            "pni",
+            "popcnt",
+            "pse",
+            "pse36",
+            "seglim64",
+            "sep",
+            "ss",
+            "sse",
+            "sse2",
+            "sse3",
+            "sse4.1",
+            "sse4.2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3",
+            "tm",
+            "tm2",
+            "tpr",
+            "tsc",
+            "vme",
+            "vmx"
+          ],
+          "cache_l1_data": 65536,
+          "cache_l1_instruction": 131072,
+          "cache_l2": 4194304,
+          "cache_l3": 0,
+          "ram_total": 8589934592,
+          "memory_type": "LPDDR4",
+          "memory_speed": 0,
+          "memory_channels": 0,
+          "gpu_info": [],
+          "os_info": "macOS",
+          "os_version": "15.3.1",
+          "os_kernel": "24.3.0",
+          "os_architecture": "x86_64",
+          "theoretical_cpu_gflops": 76.8,
+          "theoretical_gpu_gflops": 0.0
+        },
+        "static_analysis": {
+          "complexity": {
+            "constant_time": 1,
+            "linear_time": 2,
+            "quadratic_time": 3,
+            "recursive_func": 2
+          },
+          "halstead": {},
+          "big_o": {
+            "constant_time": "O(1)",
+            "linear_time": "O(n)",
+            "quadratic_time": "O(n^2)",
+            "recursive_func": "O(1) (Recursive)"
+          },
+          "call_graph": {
+            "constant_time": [],
+            "linear_time": [
+              "range"
+            ],
+            "quadratic_time": [
+              "range",
+              "range"
+            ],
+            "recursive_func": [
+              "recursive_func"
+            ]
+          }
+        },
+        "dynamic_analysis": {
+          "time": {
+            "wall_time": 0.02915758299999993,
+            "cpu_time": 0.027892000000000028
+          },
+          "memory": {
+            "current_memory": 46714,
+            "peak_memory": 73095
+          },
+          "io": {
+            "read_bytes": 0,
+            "write_bytes": 0,
+            "read_count": 0,
+            "write_count": 0
+          },
+          "gc": {
+            "collections": {
+              "gen0": 108,
+              "gen1": 1,
+              "gen2": 0
+            },
+            "objects_per_gen": {
+              "gen0": 680,
+              "gen1": 1,
+              "gen2": 0
+            },
+            "total_objects": 77982,
+            "thresholds": {
+              "gen0": 700,
+              "gen1": 10,
+              "gen2": 10
+            },
+            "is_enabled": true
+          },
+          "cpu": {
+            "user_time": 2.928199999999853e-05,
+            "system_time": 5.387999999998533e-06,
+            "cpu_percent": 0.0,
+            "context_switches": {
+              "voluntary": 0,
+              "involuntary": 2
+            }
+          },
+          "allocations": {
+            "top_allocators": [
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:136",
+                "size_bytes": 6570,
+                "size_kb": 6.42,
+                "count": 84
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:57",
+                "size_bytes": 2696,
+                "size_kb": 2.63,
+                "count": 11
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:106",
+                "size_bytes": 2224,
+                "size_kb": 2.17,
+                "count": 11
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/psutil/_psosx.py:363",
+                "size_bytes": 1496,
+                "size_kb": 1.46,
+                "count": 3
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+                "size_bytes": 1481,
+                "size_kb": 1.45,
+                "count": 14
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/gc_collector.py:24",
+                "size_bytes": 1380,
+                "size_kb": 1.35,
+                "count": 19
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:62",
+                "size_bytes": 1128,
+                "size_kb": 1.1,
+                "count": 4
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:158",
+                "size_bytes": 952,
+                "size_kb": 0.93,
+                "count": 2
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:116",
+                "size_bytes": 867,
+                "size_kb": 0.85,
+                "count": 8
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:134",
+                "size_bytes": 848,
+                "size_kb": 0.83,
+                "count": 2
+              }
+            ],
+            "total_size_bytes": 49174,
+            "total_size_mb": 0.05,
+            "total_allocations": 407
+          },
+          "hotspots": [
+            "1    0.000    0.000    0.002    0.002 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+            "1    0.000    0.000    0.002    0.002 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+            "1    0.000    0.000    0.002    0.002 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+            "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+            "1    0.001    0.001    0.001    0.001 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+            "1    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead}",
+            "6    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}"
+          ],
+          "call_tree": {
+            "start_time": 1763685883.411634,
+            "duration": 0.001782,
+            "sample_count": 1,
+            "target_description": "Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60",
+            "cpu_time": 0.001784,
+            "root_frame": {
+              "function": "profile_function",
+              "file_path_short": "code/profiler/dynamic/profiler.py",
+              "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py",
+              "line_no": 32,
+              "time": 0.001109,
+              "await_time": 0.0,
+              "is_application_code": true,
+              "children": [
+                {
+                  "function": "__exit__",
+                  "file_path_short": "code/profiler/metrics/memory_metrics.py",
+                  "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/memory_metrics.py",
+                  "line_no": 34,
+                  "time": 0.001109,
+                  "await_time": 0.0,
+                  "is_application_code": true,
+                  "children": [
+                    {
+                      "function": "debug",
+                      "file_path_short": "logging/__init__.py",
+                      "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                      "line_no": 1424,
+                      "time": 0.001109,
+                      "await_time": 0.0,
+                      "is_application_code": false,
+                      "children": [
+                        {
+                          "function": "_log",
+                          "file_path_short": "logging/__init__.py",
+                          "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                          "line_no": 1565,
+                          "time": 0.001109,
+                          "await_time": 0.0,
+                          "is_application_code": false,
+                          "children": [
+                            {
+                              "function": "handle",
+                              "file_path_short": "logging/__init__.py",
+                              "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                              "line_no": 1591,
+                              "time": 0.001109,
+                              "await_time": 0.0,
+                              "is_application_code": false,
+                              "children": [
+                                {
+                                  "function": "callHandlers",
+                                  "file_path_short": "logging/__init__.py",
+                                  "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                                  "line_no": 1645,
+                                  "time": 0.001109,
+                                  "await_time": 0.0,
+                                  "is_application_code": false,
+                                  "children": [
+                                    {
+                                      "function": "handle",
+                                      "file_path_short": "logging/__init__.py",
+                                      "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                                      "line_no": 939,
+                                      "time": 0.001109,
+                                      "await_time": 0.0,
+                                      "is_application_code": false,
+                                      "children": [
+                                        {
+                                          "function": "emit",
+                                          "file_path_short": "logging/__init__.py",
+                                          "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                                          "line_no": 1178,
+                                          "time": 0.001109,
+                                          "await_time": 0.0,
+                                          "is_application_code": false,
+                                          "children": [
+                                            {
+                                              "function": "emit",
+                                              "file_path_short": "logging/__init__.py",
+                                              "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                                              "line_no": 1071,
+                                              "time": 0.001109,
+                                              "await_time": 0.0,
+                                              "is_application_code": false,
+                                              "children": [
+                                                {
+                                                  "function": "flush",
+                                                  "file_path_short": "logging/__init__.py",
+                                                  "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/logging/__init__.py",
+                                                  "line_no": 1060,
+                                                  "time": 0.001109,
+                                                  "await_time": 0.0,
+                                                  "is_application_code": false,
+                                                  "children": [
+                                                    {
+                                                      "function": "TextIOWrapper.flush",
+                                                      "file_path_short": "<built-in>",
+                                                      "file_path": "<built-in>",
+                                                      "line_no": 0,
+                                                      "time": 0.001109,
+                                                      "await_time": 0.0,
+                                                      "is_application_code": false,
+                                                      "children": [],
+                                                      "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf"
+                                                    }
+                                                  ],
+                                                  "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                                                  "class_name": "FileHandler"
+                                                }
+                                              ],
+                                              "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                                              "class_name": "FileHandler"
+                                            }
+                                          ],
+                                          "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                                          "class_name": "FileHandler"
+                                        }
+                                      ],
+                                      "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                                      "class_name": "FileHandler"
+                                    }
+                                  ],
+                                  "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                                  "class_name": "Logger"
+                                }
+                              ],
+                              "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                              "class_name": "Logger"
+                            }
+                          ],
+                          "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                          "class_name": "Logger"
+                        }
+                      ],
+                      "group_id": "75a2623c-d800-494e-975d-0fa65f2482cf",
+                      "class_name": "Logger"
+                    }
+                  ],
+                  "class_name": "MemoryCollector"
+                }
+              ],
+              "class_name": "DynamicProfiler"
+            }
+          },
+          "return_value": {},
+          "error": null,
+          "line_profiles": {}
+        }
+      },
+      "big_o": {
+        "constant_time": "O(1)",
+        "linear_time": "O(n)",
+        "quadratic_time": "O(n^2)",
+        "recursive_func": "O(1) (Recursive)"
+      },
+      "expected": {
+        "constant_time": "O(1)",
+        "linear_time": "O(n)",
+        "quadratic_time": "O(n^2)",
+        "recursive_func": "O(1) (Recursive)"
+      },
+      "all_passed": true,
+      "func": "recursive_func",
+      "expected_complexity": "O(1) (Recursive)",
+      "actual": "O(1) (Recursive)"
+    },
+    "error": null,
+    "line_profiles": {}
+  }
+}

@@ -1,0 +1,162 @@
+.hotspots-container {
+    background: linear-gradient(135deg, rgba(15, 15, 30, 0.8) 0%, rgba(26, 26, 46, 0.8) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hotspots-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotspots-header h4 {
+    margin: 0;
+    color: #00f2ff;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.hotspots-count {
+    font-size: 12px;
+    color: #888;
+    padding: 4px 8px;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.hotspots-table-wrapper {
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.hotspots-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hotspots-table thead {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.hotspots-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    color: #00f2ff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.hotspots-table th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.hotspots-table th.sortable:hover {
+    background: rgba(0, 255, 255, 0.15);
+    color: #fff;
+}
+
+.hotspots-table th.sortable span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hotspots-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.05);
+    color: #ddd;
+    font-size: 13px;
+}
+
+.hotspots-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.hotspots-table tbody tr:hover {
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.function-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.function-name {
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    font-weight: 500;
+}
+
+.function-location {
+    font-size: 11px;
+    color: #888;
+    font-family: 'Courier New', monospace;
+}
+
+.number-cell {
+    font-family: 'Courier New', monospace;
+    text-align: right;
+    position: relative;
+}
+
+.heat-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.hotspots-table tbody tr:hover .heat-bar {
+    height: 3px;
+    opacity: 1;
+}
+
+.hotspots-empty {
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
+
+/* Scrollbar */
+.hotspots-table-wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.hotspots-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hotspots-table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.hotspots-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.5);
+}

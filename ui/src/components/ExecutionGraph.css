@@ -1,0 +1,44 @@
+.file-node {
+    font-weight: bold;
+    color: #00f2ff;
+}
+
+.function-node {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.function-node:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 242, 255, 0.3);
+}
+
+.react-flow__node-group {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.react-flow__minimap {
+    background-color: #111 !important;
+    border: 1px solid #333;
+}
+
+.react-flow__controls {
+    background-color: #111 !important;
+    border: 1px solid #333;
+}
+
+.react-flow__controls button {
+    background-color: #222 !important;
+    border-bottom: 1px solid #333 !important;
+    color: #fff;
+}
+
+.react-flow__controls button:hover {
+    background-color: #333 !important;
+}
+
+.react-flow__attribution {
+    background-color: rgba(17, 17, 17, 0.8) !important;
+    color: #666 !important;
+}

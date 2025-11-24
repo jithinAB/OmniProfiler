@@ -1,0 +1,50 @@
+.scalene-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.scalene-dashboard .badge {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.metric-card.warning {
+    border-color: rgba(239, 68, 68, 0.3);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.metric-card.warning .metric-icon {
+    color: #ef4444;
+}
+
+.leaks-section {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.leaks-section h3 {
+    margin-bottom: 1rem;
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-data {
+    color: #666;
+    font-style: italic;
+}

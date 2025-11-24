@@ -1,0 +1,140 @@
+.call-graph-container {
+    height: 600px;
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.call-graph-empty {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 1px dashed rgba(0, 255, 255, 0.3);
+}
+
+.call-graph-empty p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+/* Custom node styling */
+.react-flow__node {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+}
+
+.react-flow__node:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+    border-color: #ff00ff;
+}
+
+.react-flow__node.selected {
+    border-color: #ff00ff;
+    box-shadow: 0 8px 24px rgba(255, 0, 255, 0.5);
+}
+
+/* Complexity-based coloring */
+.react-flow__node.node-low {
+    border-color: #00ff88;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 255, 255, 0.1));
+}
+
+.react-flow__node.node-low:hover {
+    border-color: #00ff88;
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
+}
+
+.react-flow__node.node-medium {
+    border-color: #ffaa00;
+    background: linear-gradient(135deg, rgba(255, 170, 0, 0.15), rgba(255, 255, 0, 0.1));
+}
+
+.react-flow__node.node-medium:hover {
+    border-color: #ffaa00;
+    box-shadow: 0 6px 20px rgba(255, 170, 0, 0.4);
+}
+
+.react-flow__node.node-high {
+    border-color: #ff0055;
+    background: linear-gradient(135deg, rgba(255, 0, 85, 0.15), rgba(255, 0, 255, 0.1));
+}
+
+.react-flow__node.node-high:hover {
+    border-color: #ff0055;
+    box-shadow: 0 6px 20px rgba(255, 0, 85, 0.4);
+}
+
+/* Edge styling */
+.react-flow__edge-path {
+    stroke: #00ffff;
+    stroke-width: 2;
+}
+
+.react-flow__edge.animated .react-flow__edge-path {
+    stroke-dasharray: 5;
+    animation: dashdraw 0.5s linear infinite;
+}
+
+@keyframes dashdraw {
+    from {
+        stroke-dashoffset: 10;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Controls styling */
+.react-flow__controls {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+.react-flow__controls-button {
+    background: rgba(0, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    color: #00ffff;
+    transition: all 0.2s ease;
+}
+
+.react-flow__controls-button:hover {
+    background: rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.react-flow__controls-button svg {
+    fill: currentColor;
+}
+
+/* MiniMap styling */
+.react-flow__minimap {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+/* Background pattern */
+.react-flow__background {
+    background-color: #0f0f1e;
+}
+
+.react-flow__background-pattern {
+    stroke: rgba(0, 255, 255, 0.1);
+}

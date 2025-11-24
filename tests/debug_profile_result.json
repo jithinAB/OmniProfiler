@@ -1,0 +1,458 @@
+{
+  "hardware": {
+    "cpu_vendor": "GenuineIntel",
+    "cpu_arch": "X86_64",
+    "cpu_cores": 8,
+    "cpu_simd": [
+      "acpi",
+      "aes",
+      "apic",
+      "clflush",
+      "clfsh",
+      "cmov",
+      "cx16",
+      "cx8",
+      "de",
+      "ds",
+      "dscpl",
+      "dtes64",
+      "dtse64",
+      "est",
+      "fpu",
+      "fxsr",
+      "htt",
+      "lahf_lm",
+      "mca",
+      "mce",
+      "mmx",
+      "mon",
+      "monitor",
+      "msr",
+      "mtrr",
+      "pae",
+      "pat",
+      "pbe",
+      "pclmulqdq",
+      "pdcm",
+      "pge",
+      "pni",
+      "popcnt",
+      "pse",
+      "pse36",
+      "seglim64",
+      "sep",
+      "ss",
+      "sse",
+      "sse2",
+      "sse3",
+      "sse4.1",
+      "sse4.2",
+      "sse4_1",
+      "sse4_2",
+      "ssse3",
+      "tm",
+      "tm2",
+      "tpr",
+      "tsc",
+      "vme",
+      "vmx"
+    ],
+    "gpu_info": [],
+    "os_info": "Darwin",
+    "ram_total": 8589934592
+  },
+  "static_analysis": {
+    "complexity": {
+      "test_function": 2
+    },
+    "halstead": {},
+    "call_graph": {
+      "test_function": [
+        "range",
+        "append",
+        "len",
+        "len"
+      ]
+    }
+  },
+  "dynamic_analysis": {
+    "time": {
+      "wall_time": 0.29653624999999995,
+      "cpu_time": 0.025483000000000033
+    },
+    "memory": {
+      "current_memory": 0,
+      "peak_memory": 0
+    },
+    "io": {
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "read_count": 0,
+      "write_count": 0
+    },
+    "gc": {
+      "collections": {
+        "gen0": 100,
+        "gen1": 1,
+        "gen2": 0
+      },
+      "objects_per_gen": {
+        "gen0": 570,
+        "gen1": 1,
+        "gen2": 0
+      },
+      "total_objects": 30189,
+      "thresholds": {
+        "gen0": 700,
+        "gen1": 10,
+        "gen2": 10
+      },
+      "is_enabled": true
+    },
+    "cpu": {
+      "user_time": 0.00038233999999999924,
+      "system_time": 7.509599999999976e-05,
+      "cpu_percent": 0.0,
+      "context_switches": {
+        "voluntary": 3,
+        "involuntary": 4
+      }
+    },
+    "allocations": {
+      "top_allocators": [
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+          "size_bytes": 10318,
+          "size_kb": 10.08,
+          "count": 87
+        },
+        {
+          "file": "<frozen importlib._bootstrap>:228",
+          "size_bytes": 6860,
+          "size_kb": 6.7,
+          "count": 64
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:57",
+          "size_bytes": 1656,
+          "size_kb": 1.62,
+          "count": 7
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/gc_collector.py:24",
+          "size_bytes": 1352,
+          "size_kb": 1.32,
+          "count": 18
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:308",
+          "size_bytes": 1170,
+          "size_kb": 1.14,
+          "count": 15
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:62",
+          "size_bytes": 984,
+          "size_kb": 0.96,
+          "count": 4
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/psutil/_psosx.py:363",
+          "size_bytes": 968,
+          "size_kb": 0.95,
+          "count": 2
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:158",
+          "size_bytes": 952,
+          "size_kb": 0.93,
+          "count": 2
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:116",
+          "size_bytes": 915,
+          "size_kb": 0.89,
+          "count": 9
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:287",
+          "size_bytes": 856,
+          "size_kb": 0.84,
+          "count": 14
+        }
+      ],
+      "total_size_bytes": 49857,
+      "total_size_mb": 0.05,
+      "total_allocations": 453
+    },
+    "hotspots": [
+      "1    0.000    0.000    0.018    0.018 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+      "1    0.000    0.000    0.017    0.017 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+      "1    0.000    0.000    0.017    0.017 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+      "1    0.000    0.000    0.017    0.017 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+      "1    0.016    0.016    0.016    0.016 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+      "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+      "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+      "1    0.001    0.001    0.001    0.001 {built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+      "4    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}"
+    ],
+    "call_tree": "{\"start_time\": 1763669239.509392,\"duration\": 0.017531,\"sample_count\": 13,\"target_description\": \"Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60\",\"cpu_time\": 0.017096,\"root_frame\": {\"function\": \"profile_function\",\"file_path_short\": \"code/profiler/dynamic/profiler.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py\",\"line_no\": 32,\"time\": 0.015936,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"test_function\",\"file_path_short\": \"reproduce_issues.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/reproduce_issues.py\",\"line_no\": 8,\"time\": 0.014357,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": []},{\"function\": \"[self]\",\"file_path_short\": \"code/profiler/dynamic/profiler.py\",\"file_path\": \"\",\"line_no\": 0,\"time\": 0.001579,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": []}],\"class_name\": \"DynamicProfiler\"}}\n",
+    "return_value": 10495760,
+    "error": null,
+    "line_profiles": {
+      "<method 'append' of 'list' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 6,
+            "total_time": 0.002,
+            "time_per_hit": 0.0
+          }
+        },
+        "total_calls": 6,
+        "total_time": 1.7080000000000002e-06
+      },
+      "<method 'reverse' of 'list' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.0,
+            "time_per_hit": 0.0
+          }
+        },
+        "total_calls": 1,
+        "total_time": 4.5800000000000005e-07
+      },
+      "<method 'get' of 'dict' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.0,
+            "time_per_hit": 0.0
+          }
+        },
+        "total_calls": 1,
+        "total_time": 2.91e-07
+      },
+      "<built-in method __new__ of type object at 0x102725a40>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.002,
+            "time_per_hit": 0.002
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.542e-06
+      },
+      "<method 'format' of 'str' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.004,
+            "time_per_hit": 0.004
+          }
+        },
+        "total_calls": 1,
+        "total_time": 4.3750000000000005e-06
+      },
+      "<built-in method builtins.hasattr>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.001,
+            "time_per_hit": 0.001
+          }
+        },
+        "total_calls": 1,
+        "total_time": 5.830000000000001e-07
+      },
+      "<built-in method builtins.iter>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.001,
+            "time_per_hit": 0.001
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.167e-06
+      },
+      "<built-in method builtins.len>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 2,
+            "total_time": 0.001,
+            "time_per_hit": 0.001
+          }
+        },
+        "total_calls": 2,
+        "total_time": 1.0000000000000002e-06
+      },
+      "<built-in method builtins.min>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.004,
+            "time_per_hit": 0.004
+          }
+        },
+        "total_calls": 1,
+        "total_time": 3.916e-06
+      },
+      "<built-in method builtins.next>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.0,
+            "time_per_hit": 0.0
+          }
+        },
+        "total_calls": 1,
+        "total_time": 4.5800000000000005e-07
+      },
+      "<method 'get' of 'ContextVar' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.001,
+            "time_per_hit": 0.001
+          }
+        },
+        "total_calls": 1,
+        "total_time": 6.25e-07
+      },
+      "<method 'set' of 'ContextVar' objects>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.01,
+            "time_per_hit": 0.01
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.0125e-05
+      },
+      "<built-in method sys._getframe>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.0,
+            "time_per_hit": 0.0
+          }
+        },
+        "total_calls": 1,
+        "total_time": 4.1700000000000004e-07
+      },
+      "<built-in method time.time>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.002,
+            "time_per_hit": 0.002
+          }
+        },
+        "total_calls": 1,
+        "total_time": 2.2080000000000003e-06
+      },
+      "<built-in method time.process_time>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.002,
+            "time_per_hit": 0.002
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.6250000000000001e-06
+      },
+      "<built-in method time.perf_counter>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.001,
+            "time_per_hit": 0.001
+          }
+        },
+        "total_calls": 1,
+        "total_time": 9.170000000000001e-07
+      },
+      "<built-in method _thread.get_ident>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.002,
+            "time_per_hit": 0.002
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.5e-06
+      },
+      "<built-in method pyinstrument.low_level.stat_profile.setstatprofile>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 16.489,
+            "time_per_hit": 16.489
+          }
+        },
+        "total_calls": 1,
+        "total_time": 0.016489416
+      },
+      "<built-in method pyinstrument.low_level.stat_profile.get_frame_info>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 4,
+            "total_time": 0.042,
+            "time_per_hit": 0.011
+          }
+        },
+        "total_calls": 4,
+        "total_time": 4.2333e-05
+      },
+      "<built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.591,
+            "time_per_hit": 0.591
+          }
+        },
+        "total_calls": 1,
+        "total_time": 0.000590709
+      },
+      "<built-in method pyinstrument.low_level.stat_profile.walltime_coarse_resolution>": {
+        "filename": "~",
+        "lines": {
+          "0": {
+            "hits": 1,
+            "total_time": 0.002,
+            "time_per_hit": 0.002
+          }
+        },
+        "total_calls": 1,
+        "total_time": 1.6250000000000001e-06
+      }
+    }
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "hardware": {
+    "cpu_vendor": "GenuineIntel",
+    "cpu_brand": "Apple M1",
+    "cpu_model": "Apple M1",
+    "cpu_arch": "x86_64",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 8,
+    "cpu_frequency_base": 2.5,
+    "cpu_frequency_max": 2.4,
+    "cpu_simd": [
+      "acpi",
+      "aes",
+      "apic",
+      "clflush",
+      "clfsh",
+      "cmov",
+      "cx16",
+      "cx8",
+      "de",
+      "ds",
+      "dscpl",
+      "dtes64",
+      "dtse64",
+      "est",
+      "fpu",
+      "fxsr",
+      "htt",
+      "lahf_lm",
+      "mca",
+      "mce",
+      "mmx",
+      "mon",
+      "monitor",
+      "msr",
+      "mtrr",
+      "pae",
+      "pat",
+      "pbe",
+      "pclmulqdq",
+      "pdcm",
+      "pge",
+      "pni",
+      "popcnt",
+      "pse",
+      "pse36",
+      "seglim64",
+      "sep",
+      "ss",
+      "sse",
+      "sse2",
+      "sse3",
+      "sse4.1",
+      "sse4.2",
+      "sse4_1",
+      "sse4_2",
+      "ssse3",
+      "tm",
+      "tm2",
+      "tpr",
+      "tsc",
+      "vme",
+      "vmx"
+    ],
+    "cache_l1_data": 65536,
+    "cache_l1_instruction": 131072,
+    "cache_l2": 4194304,
+    "cache_l3": 0,
+    "ram_total": 8589934592,
+    "memory_type": "LPDDR4",
+    "memory_speed": 0,
+    "memory_channels": 0,
+    "gpu_info": [],
+    "os_info": "macOS",
+    "os_version": "15.3.1",
+    "os_kernel": "24.3.0",
+    "os_architecture": "x86_64",
+    "theoretical_cpu_gflops": 76.8,
+    "theoretical_gpu_gflops": 0.0
+  },
+  "static_analysis": {
+    "complexity": {},
+    "halstead": {},
+    "big_o": {},
+    "call_graph": {}
+  },
+  "dynamic_analysis": {
+    "time": {
+      "wall_time": 1.6712322079999997,
+      "cpu_time": 0.5825389999999999
+    },
+    "memory": {
+      "current_memory": 9502642,
+      "peak_memory": 9598065
+    },
+    "io": {
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "read_count": 0,
+      "write_count": 0
+    },
+    "gc": {
+      "collections": {
+        "gen0": 112,
+        "gen1": 11,
+        "gen2": 1
+      },
+      "objects_per_gen": {
+        "gen0": 62,
+        "gen1": 5,
+        "gen2": 3
+      },
+      "total_objects": 60830,
+      "thresholds": {
+        "gen0": 700,
+        "gen1": 10,
+        "gen2": 10
+      },
+      "is_enabled": true
+    },
+    "cpu": {
+      "user_time": 0.012431853999999999,
+      "system_time": 0.001188939,
+      "cpu_percent": 0.0,
+      "context_switches": {
+        "voluntary": 220,
+        "involuntary": 2913
+      }
+    },
+    "allocations": {
+      "top_allocators": [
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+          "size_bytes": 3574198,
+          "size_kb": 3490.43,
+          "count": 27911
+        },
+        {
+          "file": "<frozen importlib._bootstrap_external>:647",
+          "size_bytes": 2686091,
+          "size_kb": 2623.14,
+          "count": 41346
+        },
+        {
+          "file": "<frozen importlib._bootstrap>:228",
+          "size_bytes": 50613,
+          "size_kb": 49.43,
+          "count": 490
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:308",
+          "size_bytes": 40132,
+          "size_kb": 39.19,
+          "count": 508
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/email/feedparser.py:45",
+          "size_bytes": 39172,
+          "size_kb": 38.25,
+          "count": 11
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py:780",
+          "size_bytes": 38168,
+          "size_kb": 37.27,
+          "count": 61
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/idna/idnadata.py:94",
+          "size_bytes": 37536,
+          "size_kb": 36.66,
+          "count": 3
+        },
+        {
+          "file": "<frozen importlib._bootstrap_external>:123",
+          "size_bytes": 36344,
+          "size_kb": 35.49,
+          "count": 266
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/abc.py:106",
+          "size_bytes": 36029,
+          "size_kb": 35.18,
+          "count": 114
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:287",
+          "size_bytes": 32104,
+          "size_kb": 31.35,
+          "count": 500
+        }
+      ],
+      "total_size_bytes": 9507779,
+      "total_size_mb": 9.07,
+      "total_allocations": 85479
+    },
+    "hotspots": [
+      "1    0.000    0.000    1.657    1.657 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+      "1    0.000    0.000    1.656    1.656 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+      "1    0.000    0.000    1.656    1.656 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+      "1    0.000    0.000    1.656    1.656 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+      "1    1.656    1.656    1.656    1.656 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+      "1    0.000    0.000    0.000    0.000 {method 'set' of 'ContextVar' objects}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+      "14    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}"
+    ],
+    "call_tree": "{\"start_time\": 1763685546.609753,\"duration\": 1.656514,\"sample_count\": 508,\"target_description\": \"Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60\",\"cpu_time\": 0.567846,\"root_frame\": {\"function\": \"profile_function\",\"file_path_short\": \"code/profiler/dynamic/profiler.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py\",\"line_no\": 32,\"time\": 1.655035,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"run_script_with_mock_input\",\"file_path_short\": \"code/profiler/orchestrator.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py\",\"line_no\": 103,\"time\": 1.595806,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"<string>\",\"file_path\": \"<string>\",\"line_no\": 1,\"time\": 1.594689,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"requests/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/__init__.py\",\"line_no\": 6,\"time\": 1.477435,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/__init__.py\",\"line_no\": 1,\"time\": 0.875908,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/_base_connection.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/_base_connection.py\",\"line_no\": 1,\"time\": 0.758927,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/util/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/__init__.py\",\"line_no\": 2,\"time\": 0.671296,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/util/request.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/request.py\",\"line_no\": 1,\"time\": 0.426982,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"brotli/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/brotli/__init__.py\",\"line_no\": 3,\"time\": 0.419965,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"brotli/brotli.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/brotli/brotli.py\",\"line_no\": 2,\"time\": 0.417619,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"[self]\",\"file_path_short\": \"brotli/brotli.py\",\"file_path\": \"\",\"line_no\": 0,\"time\": 0.223056,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"create_dynamic\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.192048,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"urllib3/util/ssl_.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py\",\"line_no\": 1,\"time\": 0.169923,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/util/url.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/url.py\",\"line_no\": 1,\"time\": 0.159672,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"compile\",\"file_path_short\": \"re.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py\",\"line_no\": 250,\"time\": 0.157666,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"re.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py\",\"line_no\": 289,\"time\": 0.157666,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 759,\"time\": 0.154646,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"parse\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 937,\"time\": 0.080748,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse_sub\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 435,\"time\": 0.079746,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 493,\"time\": 0.079746,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse_sub\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 435,\"time\": 0.069577,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 493,\"time\": 0.069577,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse_sub\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 435,\"time\": 0.063542,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 493,\"time\": 0.060538,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse_sub\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 435,\"time\": 0.023344,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_parse\",\"file_path_short\": \"sre_parse.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_parse.py\",\"line_no\": 493,\"time\": 0.021338,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"_code\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 598,\"time\": 0.073899,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.065866,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.064867,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.059791,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.049770,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.027624,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 71,\"time\": 0.021578,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"[self]\",\"file_path_short\": \"urllib3/util/__init__.py\",\"file_path\": \"\",\"line_no\": 0,\"time\": 0.043459,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"inner\",\"file_path_short\": \"typing.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/typing.py\",\"line_no\": 269,\"time\": 0.035259,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"[self]\",\"file_path_short\": \"urllib3/_base_connection.py\",\"file_path\": \"\",\"line_no\": 0,\"time\": 0.029235,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"urllib3/connectionpool.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py\",\"line_no\": 1,\"time\": 0.059245,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/_request_methods.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/_request_methods.py\",\"line_no\": 1,\"time\": 0.040380,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/response.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/response.py\",\"line_no\": 1,\"time\": 0.033387,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/connection.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py\",\"line_no\": 1,\"time\": 0.027280,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib3/http2/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/http2/__init__.py\",\"line_no\": 1,\"time\": 0.017480,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"urllib3/exceptions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/exceptions.py\",\"line_no\": 1,\"time\": 0.029348,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"http/client.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py\",\"line_no\": 1,\"time\": 0.024589,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"requests/exceptions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/exceptions.py\",\"line_no\": 1,\"time\": 0.371990,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"requests/compat.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/compat.py\",\"line_no\": 1,\"time\": 0.368345,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"http/cookiejar.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/http/cookiejar.py\",\"line_no\": 1,\"time\": 0.269974,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"urllib/request.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py\",\"line_no\": 1,\"time\": 0.245120,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"create_dynamic\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.234980,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"compile\",\"file_path_short\": \"re.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py\",\"line_no\": 250,\"time\": 0.018001,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_compile\",\"file_path_short\": \"re.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/re.py\",\"line_no\": 289,\"time\": 0.018001,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"compile\",\"file_path_short\": \"sre_compile.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/sre_compile.py\",\"line_no\": 759,\"time\": 0.018001,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"_resolve_char_detection\",\"file_path_short\": \"requests/compat.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/compat.py\",\"line_no\": 30,\"time\": 0.083777,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"import_module\",\"file_path_short\": \"importlib/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/importlib/__init__.py\",\"line_no\": 109,\"time\": 0.083777,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"chardet/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/__init__.py\",\"line_no\": 19,\"time\": 0.081774,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"chardet/universaldetector.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/universaldetector.py\",\"line_no\": 28,\"time\": 0.078771,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"chardet/mbcsgroupprober.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/mbcsgroupprober.py\",\"line_no\": 30,\"time\": 0.046751,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"chardet/sjisprober.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/sjisprober.py\",\"line_no\": 28,\"time\": 0.033801,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"chardet/chardistribution.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/chardistribution.py\",\"line_no\": 28,\"time\": 0.029330,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"loads\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.021782,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"chardet/sbcsgroupprober.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/chardet/sbcsgroupprober.py\",\"line_no\": 29,\"time\": 0.019810,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"charset_normalizer/__init__.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/__init__.py\",\"line_no\": 1,\"time\": 0.172086,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"charset_normalizer/api.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/api.py\",\"line_no\": 1,\"time\": 0.168779,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"charset_normalizer/md.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/md.py\",\"line_no\": 1,\"time\": 0.154508,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"charset_normalizer/utils.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/charset_normalizer/utils.py\",\"line_no\": 1,\"time\": 0.151171,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"create_dynamic\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.150172,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"<module>\",\"file_path_short\": \"requests/api.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py\",\"line_no\": 1,\"time\": 0.019282,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"requests/sessions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py\",\"line_no\": 1,\"time\": 0.018113,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"<module>\",\"file_path_short\": \"requests/adapters.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py\",\"line_no\": 1,\"time\": 0.017113,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"}],\"group_id\": \"4256ee10-8f16-4ebf-a3fc-540db03cafff\"},{\"function\": \"post\",\"file_path_short\": \"requests/api.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py\",\"line_no\": 103,\"time\": 0.114731,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"request\",\"file_path_short\": \"requests/api.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/api.py\",\"line_no\": 14,\"time\": 0.113721,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"request\",\"file_path_short\": \"requests/sessions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py\",\"line_no\": 500,\"time\": 0.113721,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"send\",\"file_path_short\": \"requests/sessions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py\",\"line_no\": 673,\"time\": 0.083173,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"send\",\"file_path_short\": \"requests/adapters.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py\",\"line_no\": 590,\"time\": 0.083173,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"urlopen\",\"file_path_short\": \"urllib3/connectionpool.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py\",\"line_no\": 592,\"time\": 0.082171,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_make_request\",\"file_path_short\": \"urllib3/connectionpool.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py\",\"line_no\": 377,\"time\": 0.082171,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"getresponse\",\"file_path_short\": \"urllib3/connection.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py\",\"line_no\": 534,\"time\": 0.080085,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"getresponse\",\"file_path_short\": \"http/client.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py\",\"line_no\": 1327,\"time\": 0.079105,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"begin\",\"file_path_short\": \"http/client.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py\",\"line_no\": 312,\"time\": 0.079105,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_read_status\",\"file_path_short\": \"http/client.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/http/client.py\",\"line_no\": 279,\"time\": 0.079105,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"readinto\",\"file_path_short\": \"socket.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/socket.py\",\"line_no\": 690,\"time\": 0.079105,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"socket.recv_into\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.079105,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"SocketIO\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPResponse\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPResponse\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPConnection\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPConnection\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPConnectionPool\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPConnectionPool\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"HTTPAdapter\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"Session\"},{\"function\": \"merge_environment_settings\",\"file_path_short\": \"requests/sessions.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py\",\"line_no\": 750,\"time\": 0.028405,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"get_environ_proxies\",\"file_path_short\": \"requests/utils.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/utils.py\",\"line_no\": 816,\"time\": 0.028405,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"should_bypass_proxies\",\"file_path_short\": \"requests/utils.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/requests/utils.py\",\"line_no\": 755,\"time\": 0.027407,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"proxy_bypass\",\"file_path_short\": \"urllib/request.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py\",\"line_no\": 2636,\"time\": 0.027407,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"proxy_bypass_macosx_sysconf\",\"file_path_short\": \"urllib/request.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/urllib/request.py\",\"line_no\": 2622,\"time\": 0.026407,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_get_proxy_settings\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.019385,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"Session\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\",\"class_name\": \"Session\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}],\"group_id\": \"1d92a607-0fe0-4e0e-87b5-772e07769417\"}]}]},{\"function\": \"__exit__\",\"file_path_short\": \"code/profiler/metrics/allocation_collector.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/allocation_collector.py\",\"line_no\": 23,\"time\": 0.059230,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"take_snapshot\",\"file_path_short\": \"tracemalloc.py\",\"file_path\": \"/Users/jithinvg/opt/anaconda3/lib/python3.9/tracemalloc.py\",\"line_no\": 551,\"time\": 0.059230,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [{\"function\": \"_get_traces\",\"file_path_short\": \"<built-in>\",\"file_path\": \"<built-in>\",\"line_no\": 0,\"time\": 0.059230,\"await_time\": 0.000000,\"is_application_code\": false,\"children\": [],\"group_id\": \"9720301c-d7ef-452a-87bf-1ba7f097392e\"}],\"group_id\": \"9720301c-d7ef-452a-87bf-1ba7f097392e\"}],\"class_name\": \"AllocationCollector\"}],\"class_name\": \"DynamicProfiler\"}}\n",
+    "return_value": {
+      "code": "\ndef constant_time():\n    return 42\n\ndef linear_time(n):\n    for i in range(n):\n        pass\n\ndef quadratic_time(n):\n    for i in range(n):\n        for j in range(n):\n            pass\n\ndef recursive_func(n):\n    if n <= 0: return\n    recursive_func(n-1)\n",
+      "url": "http://localhost:8000/profile/code",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "data": {
+        "code": "\ndef constant_time():\n    return 42\n\ndef linear_time(n):\n    for i in range(n):\n        pass\n\ndef quadratic_time(n):\n    for i in range(n):\n        for j in range(n):\n            pass\n\ndef recursive_func(n):\n    if n <= 0: return\n    recursive_func(n-1)\n"
+      },
+      "result": {
+        "hardware": {
+          "cpu_vendor": "GenuineIntel",
+          "cpu_brand": "Apple M1",
+          "cpu_model": "Apple M1",
+          "cpu_arch": "x86_64",
+          "cpu_physical_cores": 8,
+          "cpu_logical_cores": 8,
+          "cpu_frequency_base": 2.5,
+          "cpu_frequency_max": 2.4,
+          "cpu_simd": [
+            "acpi",
+            "aes",
+            "apic",
+            "clflush",
+            "clfsh",
+            "cmov",
+            "cx16",
+            "cx8",
+            "de",
+            "ds",
+            "dscpl",
+            "dtes64",
+            "dtse64",
+            "est",
+            "fpu",
+            "fxsr",
+            "htt",
+            "lahf_lm",
+            "mca",
+            "mce",
+            "mmx",
+            "mon",
+            "monitor",
+            "msr",
+            "mtrr",
+            "pae",
+            "pat",
+            "pbe",
+            "pclmulqdq",
+            "pdcm",
+            "pge",
+            "pni",
+            "popcnt",
+            "pse",
+            "pse36",
+            "seglim64",
+            "sep",
+            "ss",
+            "sse",
+            "sse2",
+            "sse3",
+            "sse4.1",
+            "sse4.2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3",
+            "tm",
+            "tm2",
+            "tpr",
+            "tsc",
+            "vme",
+            "vmx"
+          ],
+          "cache_l1_data": 65536,
+          "cache_l1_instruction": 131072,
+          "cache_l2": 4194304,
+          "cache_l3": 0,
+          "ram_total": 8589934592,
+          "memory_type": "LPDDR4",
+          "memory_speed": 0,
+          "memory_channels": 0,
+          "gpu_info": [],
+          "os_info": "macOS",
+          "os_version": "15.3.1",
+          "os_kernel": "24.3.0",
+          "os_architecture": "x86_64",
+          "theoretical_cpu_gflops": 76.8,
+          "theoretical_gpu_gflops": 0.0
+        },
+        "static_analysis": {
+          "complexity": {
+            "constant_time": 1,
+            "linear_time": 2,
+            "quadratic_time": 3,
+            "recursive_func": 2
+          },
+          "halstead": {},
+          "big_o": {
+            "constant_time": "O(1)",
+            "linear_time": "O(n)",
+            "quadratic_time": "O(n^2)",
+            "recursive_func": "O(1) (Recursive)"
+          },
+          "call_graph": {
+            "constant_time": [],
+            "linear_time": [
+              "range"
+            ],
+            "quadratic_time": [
+              "range",
+              "range"
+            ],
+            "recursive_func": [
+              "recursive_func"
+            ]
+          }
+        },
+        "dynamic_analysis": {
+          "time": {
+            "wall_time": 0.028259334000001246,
+            "cpu_time": 0.02650499999999978
+          },
+          "memory": {
+            "current_memory": 46554,
+            "peak_memory": 72935
+          },
+          "io": {
+            "read_bytes": 0,
+            "write_bytes": 0,
+            "read_count": 0,
+            "write_count": 0
+          },
+          "gc": {
+            "collections": {
+              "gen0": 104,
+              "gen1": 1,
+              "gen2": 0
+            },
+            "objects_per_gen": {
+              "gen0": 506,
+              "gen1": 1,
+              "gen2": 0
+            },
+            "total_objects": 77845,
+            "thresholds": {
+              "gen0": 700,
+              "gen1": 10,
+              "gen2": 10
+            },
+            "is_enabled": true
+          },
+          "cpu": {
+            "user_time": 2.943600000000074e-05,
+            "system_time": 3.844000000002845e-06,
+            "cpu_percent": 0.0,
+            "context_switches": {
+              "voluntary": 0,
+              "involuntary": 2
+            }
+          },
+          "allocations": {
+            "top_allocators": [
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:136",
+                "size_bytes": 6570,
+                "size_kb": 6.42,
+                "count": 84
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:57",
+                "size_bytes": 2696,
+                "size_kb": 2.63,
+                "count": 11
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:106",
+                "size_bytes": 2224,
+                "size_kb": 2.17,
+                "count": 11
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/psutil/_psosx.py:363",
+                "size_bytes": 1496,
+                "size_kb": 1.46,
+                "count": 3
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+                "size_bytes": 1481,
+                "size_kb": 1.45,
+                "count": 14
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/gc_collector.py:24",
+                "size_bytes": 1380,
+                "size_kb": 1.35,
+                "count": 19
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:62",
+                "size_bytes": 1128,
+                "size_kb": 1.1,
+                "count": 4
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:158",
+                "size_bytes": 952,
+                "size_kb": 0.93,
+                "count": 2
+              },
+              {
+                "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:116",
+                "size_bytes": 867,
+                "size_kb": 0.85,
+                "count": 8
+              },
+              {
+                "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:134",
+                "size_bytes": 848,
+                "size_kb": 0.83,
+                "count": 2
+              }
+            ],
+            "total_size_bytes": 49006,
+            "total_size_mb": 0.05,
+            "total_allocations": 406
+          },
+          "hotspots": [
+            "1    0.000    0.000    0.002    0.002 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+            "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+            "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+            "1    0.000    0.000    0.001    0.001 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+            "1    0.001    0.001    0.001    0.001 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+            "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+            "1    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead}",
+            "6    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}"
+          ],
+          "call_tree": "{\"start_time\": 1763685548.168625,\"duration\": 0.001603,\"sample_count\": 1,\"target_description\": \"Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60\",\"cpu_time\": 0.001597,\"root_frame\": {\"function\": \"profile_function\",\"file_path_short\": \"code/profiler/dynamic/profiler.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py\",\"line_no\": 32,\"time\": 0.001021,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [{\"function\": \"__exit__\",\"file_path_short\": \"code/profiler/metrics/time_metrics.py\",\"file_path\": \"/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/time_metrics.py\",\"line_no\": 22,\"time\": 0.001021,\"await_time\": 0.000000,\"is_application_code\": true,\"children\": [],\"class_name\": \"TimeCollector\"}],\"class_name\": \"DynamicProfiler\"}}\n",
+          "return_value": {},
+          "error": null,
+          "line_profiles": {}
+        }
+      },
+      "big_o": {
+        "constant_time": "O(1)",
+        "linear_time": "O(n)",
+        "quadratic_time": "O(n^2)",
+        "recursive_func": "O(1) (Recursive)"
+      },
+      "expected": {
+        "constant_time": "O(1)",
+        "linear_time": "O(n)",
+        "quadratic_time": "O(n^2)",
+        "recursive_func": "O(1) (Recursive)"
+      },
+      "all_passed": true,
+      "func": "recursive_func",
+      "expected_complexity": "O(1) (Recursive)",
+      "actual": "O(1) (Recursive)"
+    },
+    "error": null,
+    "line_profiles": {}
+  }
+}

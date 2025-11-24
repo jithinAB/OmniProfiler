@@ -1,0 +1,41 @@
+# Hardware Detection
+py-cpuinfo>=9.0.0
+psutil>=5.9.0
+GPUtil>=1.4.0
+# nvidia-ml-py is optional but good for more detailed Nvidia stats (replaces deprecated pynvml)
+nvidia-ml-py>=12.535.0 
+
+# Profiling
+# cProfile is stdlib
+# tracemalloc is stdlib
+pyinstrument>=4.6.0
+# line_profiler>=4.1.0 # Optional, requires compilation
+
+# Static Analysis
+radon>=6.0.1
+# ast is stdlib
+
+# Visualization
+rich>=13.7.0
+networkx>=3.2.1
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Phase 6: API & CLI
+gitpython>=3.1.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
+typer>=0.9.0
+python-multipart>=0.0.6
+func-timeout
+line-profiler
+psutil>=5.9.0
+numpy>=1.20.0>=4.3.5
+
+# Workload Generation & Analysis
+faker>=20.0.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+tabulate>=0.9.0  # For markdown table generation

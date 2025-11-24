@@ -1,0 +1,200 @@
+.comparison-view {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.comparison-view h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #00f2ff, #00ff88);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.upload-box {
+    background: #1a1a1a;
+    border: 2px dashed #333;
+    border-radius: 12px;
+    padding: 24px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.upload-box:hover {
+    border-color: #00f2ff;
+    background: #222;
+}
+
+.upload-box h3 {
+    margin-top: 0;
+    color: #888;
+    font-size: 1rem;
+}
+
+.upload-box input {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.file-name {
+    margin-top: 12px;
+    color: #00ff88;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.vs-badge {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    background: #111;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.compare-btn {
+    background: linear-gradient(90deg, #00f2ff, #0066ff);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.compare-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.compare-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.error-message {
+    background: #ff005522;
+    border: 1px solid #ff0055;
+    color: #ff0055;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.results-section h3 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.diff-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.diff-card h4 {
+    margin: 0;
+    color: #888;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.diff-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.value-box .label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.value-box .value {
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
+.diff-arrow {
+    color: #444;
+}
+
+.diff-stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 12px;
+    border-top: 1px solid #333;
+}
+
+.diff-stat .abs {
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+/* Status Colors */
+.diff-card.improved {
+    border-color: #00ff8844;
+    background: linear-gradient(180deg, #1a1a1a 0%, #00ff8811 100%);
+}
+
+.diff-card.improved .diff-stat {
+    color: #00ff88;
+}
+
+.diff-card.degraded {
+    border-color: #ff005544;
+    background: linear-gradient(180deg, #1a1a1a 0%, #ff005511 100%);
+}
+
+.diff-card.degraded .diff-stat {
+    color: #ff0055;
+}
+
+.diff-card.neutral .diff-stat {
+    color: #888;
+}

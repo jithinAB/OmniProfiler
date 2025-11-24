@@ -1,0 +1,359 @@
+{
+  "hardware": {
+    "cpu_vendor": "GenuineIntel",
+    "cpu_brand": "Apple M1",
+    "cpu_model": "Apple M1",
+    "cpu_arch": "x86_64",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 8,
+    "cpu_frequency_base": 2.5,
+    "cpu_frequency_max": 2.4,
+    "cpu_simd": [
+      "acpi",
+      "aes",
+      "apic",
+      "clflush",
+      "clfsh",
+      "cmov",
+      "cx16",
+      "cx8",
+      "de",
+      "ds",
+      "dscpl",
+      "dtes64",
+      "dtse64",
+      "est",
+      "fpu",
+      "fxsr",
+      "htt",
+      "lahf_lm",
+      "mca",
+      "mce",
+      "mmx",
+      "mon",
+      "monitor",
+      "msr",
+      "mtrr",
+      "pae",
+      "pat",
+      "pbe",
+      "pclmulqdq",
+      "pdcm",
+      "pge",
+      "pni",
+      "popcnt",
+      "pse",
+      "pse36",
+      "seglim64",
+      "sep",
+      "ss",
+      "sse",
+      "sse2",
+      "sse3",
+      "sse4.1",
+      "sse4.2",
+      "sse4_1",
+      "sse4_2",
+      "ssse3",
+      "tm",
+      "tm2",
+      "tpr",
+      "tsc",
+      "vme",
+      "vmx"
+    ],
+    "cache_l1_data": 65536,
+    "cache_l1_instruction": 131072,
+    "cache_l2": 4194304,
+    "cache_l3": 0,
+    "ram_total": 8589934592,
+    "memory_type": "LPDDR4",
+    "memory_speed": 0,
+    "memory_channels": 0,
+    "gpu_info": [],
+    "os_info": "macOS",
+    "os_version": "15.3.1",
+    "os_kernel": "24.3.0",
+    "os_architecture": "x86_64",
+    "theoretical_cpu_gflops": 76.8,
+    "theoretical_gpu_gflops": 0.0
+  },
+  "static_analysis": {
+    "complexity": {
+      "validate_input": 7,
+      "fib_recursive": 2,
+      "fib_recursive_with_fake_cache": 1,
+      "generate_fib_sequence_slow": 2,
+      "sum_fib_sequence_twice": 3,
+      "pretty_print_sequence": 2,
+      "main": 2
+    },
+    "halstead": {},
+    "big_o": {
+      "validate_input": "O(n)",
+      "fib_recursive": "O(1) (Recursive)",
+      "helper": "O(1) (Recursive)",
+      "fib_recursive_with_fake_cache": "O(1) (Recursive)",
+      "generate_fib_sequence_slow": "O(n)",
+      "sum_fib_sequence_twice": "O(n)",
+      "pretty_print_sequence": "O(n)",
+      "main": "O(1)"
+    },
+    "call_graph": {
+      "validate_input": [
+        "int",
+        "ValueError",
+        "isinstance",
+        "TypeError",
+        "ValueError",
+        "get",
+        "ValueError",
+        "range",
+        "RuntimeError"
+      ],
+      "fib_recursive": [
+        "fib_recursive",
+        "fib_recursive"
+      ],
+      "fib_recursive_with_fake_cache": [
+        "helper"
+      ],
+      "helper": [
+        "fib_recursive",
+        "fib_recursive",
+        "helper",
+        "helper"
+      ],
+      "generate_fib_sequence_slow": [
+        "validate_input",
+        "range",
+        "fib_recursive_with_fake_cache",
+        "str",
+        "int",
+        "list",
+        "append"
+      ],
+      "sum_fib_sequence_twice": [
+        "sum",
+        "sum"
+      ],
+      "pretty_print_sequence": [
+        "print",
+        "enumerate",
+        "print",
+        "print",
+        "len"
+      ],
+      "main": [
+        "validate_input",
+        "validate_input",
+        "validate_input",
+        "get",
+        "print",
+        "generate_fib_sequence_slow",
+        "pretty_print_sequence",
+        "sum_fib_sequence_twice",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print"
+      ]
+    }
+  },
+  "dynamic_analysis": {
+    "time": {
+      "wall_time": 0.022325499999999998,
+      "cpu_time": 0.022092
+    },
+    "memory": {
+      "current_memory": 69346,
+      "peak_memory": 300045
+    },
+    "io": {
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "read_count": 0,
+      "write_count": 0
+    },
+    "gc": {
+      "collections": {
+        "gen0": 543,
+        "gen1": 1,
+        "gen2": 0
+      },
+      "objects_per_gen": {
+        "gen0": 300,
+        "gen1": 2,
+        "gen2": 0
+      },
+      "total_objects": 49768,
+      "thresholds": {
+        "gen0": 700,
+        "gen1": 10,
+        "gen2": 10
+      },
+      "is_enabled": true
+    },
+    "cpu": {
+      "user_time": 0.0001044380000000001,
+      "system_time": 7.316000000000267e-06,
+      "cpu_percent": 0.0,
+      "context_switches": {
+        "voluntary": 0,
+        "involuntary": 3
+      }
+    },
+    "allocations": {
+      "top_allocators": [
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:136",
+          "size_bytes": 15565,
+          "size_kb": 15.2,
+          "count": 179
+        },
+        {
+          "file": "<string>:83",
+          "size_bytes": 6156,
+          "size_kb": 6.01,
+          "count": 15
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:304",
+          "size_bytes": 4811,
+          "size_kb": 4.7,
+          "count": 38
+        },
+        {
+          "file": "<string>:73",
+          "size_bytes": 2880,
+          "size_kb": 2.81,
+          "count": 30
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py:106",
+          "size_bytes": 2224,
+          "size_kb": 2.17,
+          "count": 11
+        },
+        {
+          "file": "<string>:101",
+          "size_bytes": 1632,
+          "size_kb": 1.59,
+          "count": 31
+        },
+        {
+          "file": "/Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/psutil/_psosx.py:363",
+          "size_bytes": 1496,
+          "size_kb": 1.46,
+          "count": 3
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:57",
+          "size_bytes": 1392,
+          "size_kb": 1.36,
+          "count": 8
+        },
+        {
+          "file": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/gc_collector.py:24",
+          "size_bytes": 1352,
+          "size_kb": 1.32,
+          "count": 18
+        },
+        {
+          "file": "<string>:1",
+          "size_bytes": 1184,
+          "size_kb": 1.16,
+          "count": 10
+        }
+      ],
+      "total_size_bytes": 77604,
+      "total_size_mb": 0.07,
+      "total_allocations": 646
+    },
+    "hotspots": [
+      "1    0.000    0.000    0.005    0.005 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/profiler.py:118(start)",
+      "1    0.000    0.000    0.004    0.004 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:70(subscribe)",
+      "1    0.000    0.000    0.004    0.004 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:111(_update)",
+      "1    0.000    0.000    0.004    0.004 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:132(_start_sampling)",
+      "1    0.004    0.004    0.004    0.004 {built-in method pyinstrument.low_level.stat_profile.setstatprofile}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:286(build_call_stack)",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:207(_check_timing_overhead)",
+      "14    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.get_frame_info}",
+      "1    0.000    0.000    0.000    0.000 /Users/jithinvg/opt/anaconda3/lib/python3.9/site-packages/pyinstrument/stack_sampler.py:340(timing_overhead)",
+      "1    0.000    0.000    0.000    0.000 {built-in method pyinstrument.low_level.stat_profile.measure_timing_overhead}"
+    ],
+    "call_tree": {
+      "start_time": 1763686406.425028,
+      "duration": 0.004833,
+      "sample_count": 2,
+      "target_description": "Profile at /Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py:60",
+      "cpu_time": 0.00481,
+      "root_frame": {
+        "function": "profile_function",
+        "file_path_short": "code/profiler/dynamic/profiler.py",
+        "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/dynamic/profiler.py",
+        "line_no": 32,
+        "time": 0.003712,
+        "await_time": 0.0,
+        "is_application_code": true,
+        "children": [
+          {
+            "function": "run_script_with_mock_input",
+            "file_path_short": "code/profiler/orchestrator.py",
+            "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/orchestrator.py",
+            "line_no": 103,
+            "time": 0.002398,
+            "await_time": 0.0,
+            "is_application_code": true,
+            "children": []
+          },
+          {
+            "function": "__exit__",
+            "file_path_short": "code/profiler/metrics/allocation_collector.py",
+            "file_path": "/Users/jithinvg/Desktop/vlad-bud/code/profiler/metrics/allocation_collector.py",
+            "line_no": 23,
+            "time": 0.001314,
+            "await_time": 0.0,
+            "is_application_code": true,
+            "children": [
+              {
+                "function": "take_snapshot",
+                "file_path_short": "tracemalloc.py",
+                "file_path": "/Users/jithinvg/opt/anaconda3/lib/python3.9/tracemalloc.py",
+                "line_no": 551,
+                "time": 0.001314,
+                "await_time": 0.0,
+                "is_application_code": false,
+                "children": [
+                  {
+                    "function": "_get_traces",
+                    "file_path_short": "<built-in>",
+                    "file_path": "<built-in>",
+                    "line_no": 0,
+                    "time": 0.001314,
+                    "await_time": 0.0,
+                    "is_application_code": false,
+                    "children": [],
+                    "group_id": "aa007d47-9c91-4d59-b33b-1290d1906075"
+                  }
+                ],
+                "group_id": "aa007d47-9c91-4d59-b33b-1290d1906075"
+              }
+            ],
+            "class_name": "AllocationCollector"
+          }
+        ],
+        "class_name": "DynamicProfiler"
+      }
+    },
+    "return_value": {
+      "CONFIG": {
+        "max_n": 10000,
+        "verbose": true
+      }
+    },
+    "error": null,
+    "line_profiles": {}
+  }
+}

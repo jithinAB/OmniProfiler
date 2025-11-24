@@ -1,0 +1,87 @@
+.gc-metrics {
+    background: linear-gradient(135deg, rgba(15, 15, 30, 0.8) 0%, rgba(26, 26, 46, 0.8) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 85, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.gc-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gc-header h4 {
+    margin: 0;
+    color: #ff0055;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gc-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gc-stat {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #ff0055;
+}
+
+.gc-label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.gc-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff0055;
+}
+
+.gc-chart {
+    margin: 20px 0;
+}
+
+.gc-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.gc-gen-info {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.gc-gen-info h5 {
+    margin: 0 0 8px 0;
+    color: #00f2ff;
+    font-size: 13px;
+}
+
+.gc-gen-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.gc-gen-stats strong {
+    color: #fff;
+    margin-left: 4px;
+}
